@@ -1,0 +1,28 @@
+<html>
+<head>
+  <title> Area de un triangulo </title>
+</head>
+<body>
+<script languaje="javascrip">
+var b;
+var h;
+var resultado;
+   function calcular()
+    {
+      b=parseInt(document.formulario1.base.value);
+	  h=parseInt(document.formulario1.haltura.value);
+	  resultado=(b*h)/2;
+	  document.formulario1.result.value=resultado;
+    }
+	
+</script>
+<h2> Suma de dos Numeros </h2>
+<form name ="formulario1">
+  <h4> Base: <input type="tex" id ="base" /><br /></h4>
+  <h4> Haltura: <input type="tex" id ="haltura"/><br /> </h4>
+  <h4> Resultado: <input type="tex" id="result" /><br /> </h4>
+   <input type="button" value="calcular" onclick="calcular()"> 
+   
+</form>
+</body>
+</html>
